@@ -21,6 +21,8 @@ public class HomePage {
 
     private final By hoverLink = By.linkText("Hovers");
 
+    private final By dragAndDropLink = By.linkText("Drag and Drop");
+
     public LoginPage clickOnFormAuthenticationLink(){
        clickOnLink(formAuthenticationLink);
         return new LoginPage(driver);
@@ -42,6 +44,11 @@ public class HomePage {
     public HoverPage clickOnHoverLink(){
         clickOnLink(hoverLink);
         return new HoverPage(driver);
+    }
+
+    public DragAndDropPage clickOnDragAndDropLink(){
+        clickOnLink(dragAndDropLink);
+        return new DragAndDropPage(driver);
     }
 
     private void clickOnLink(By locator){
