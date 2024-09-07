@@ -6,6 +6,7 @@ import org.testng.annotations.*;
 import pages.LoginPage;
 import pages.SecureAreaPage;
 
+import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class LoginTests extends BaseTests {

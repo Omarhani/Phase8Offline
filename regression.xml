@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression">
+    <test verbose="2" name="Chrome">
+        <classes>
+            <class name="alerts.JSAlertsTests">
+                <methods>
+                    <include name="testAcceptAlert"/>
+                </methods>
+            </class>
+            <class name="dragAndDrop.DragAndDropTests">
+                <methods>
+                    <include name="testDragAndDrop"/>
+                    <include name="testDragAndDrop2"/>
+                </methods>
+            </class>
+            <class name="dropDown.DropDownTests">
+                <methods>
+                    <include name="testDropDownListOne"/>
+                </methods>
+            </class>
+            <class name="frame.FrameTests">
+                <methods>
+                    <include name="testFrame"/>
+                </methods>
+            </class>
+            <class name="hover.HoverTests">
+                <methods>
+                    <include name="testHoverOverFigure"/>
+                </methods>
+            </class>
+            <class name="login.LoginTests">
+                <methods>
+                    <include name="testSuccessfulLogin"/>
+                    <include name="testInvalidUsername"/>
+                    <include name="testInvalidPassword"/>
+                </methods>
+            </class>
+            <class name="statusCode.StatusCodeTests">
+                <methods>
+                    <include name="test200"/>
+                </methods>
+            </class>
+            <class name="wait.DynamicLoadingTests">
+                <methods>
+                    <include name="testExampleOne"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
